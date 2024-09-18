@@ -431,7 +431,10 @@ Header Style
   padding-right: 0px;
   border-right: none;
 }
-
+.sub-header ul.info li a {
+ text-decoration: none;
+ color: #7a7a7a;
+}
 .sub-header ul.info li i {
   font-size: 20px;
   color: #f35525;
