@@ -1327,47 +1327,12 @@ Contact Style
 
 .contact-content {
   /* margin-top: -240px;*/
-  position: relative;
-  z-index: 1;
+ /* position: relative;
+  z-index: 1;*/
+  background-color: #fafafa;
+  padding-bottom: 80px;
 }
 
-.contact-content #map {
-  border-radius: 10px;
-  margin-bottom: 60px;
-}
-
-.contact-content .item {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-  background-color: #fff;
-}
-
-.contact-content .phone {
-  margin-right: 15px;
-}
-
-.contact-content .email {
-  margin-left: 15px;
-}
-
-.contact-content .item img {
-  float: left;
-  margin-right: 25px;
-  vertical-align: middle;
-}
-
-.contact-content .item h6 {
-  font-size: 20px;
-  font-weight: 600;
-  vertical-align: middle;
-}
-
-.contact-content .item h6 span {
-  font-size: 15px;
-  color: #aaaaaa;
-  font-weight: 400;
-}
 
 .contact-content #contact-form {
   margin-left: 30px;
@@ -1375,6 +1340,7 @@ Contact Style
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
   background-color: #fff;
+
 }
 
 .contact-content #contact-form label {
@@ -1434,7 +1400,7 @@ footer.footer-no-gap {
 }
 
 footer {
-  margin-top: 150px;
+  /*margin-top: 150px;*/
   background-color: #1e1e1e;
   min-height: 100px;
 }
