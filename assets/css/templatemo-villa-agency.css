@@ -1981,6 +1981,14 @@ body {
 .owl-theme .owl-controls .owl-page.active span {
   background: #f35525;
 }
+.services{
+  background-color: #fafafa;
+    padding: 100px 0px;
+}
+.services-description{
+  padding-top: 20px;
+  font-weight: bold;
+}
 .box {
   position:  relative;
   width:  100%;
