@@ -431,10 +431,12 @@ Header Style
   padding-right: 0px;
   border-right: none;
 }
+
 .sub-header ul.info li a {
- text-decoration: none;
- color: #7a7a7a;
+  text-decoration: none;
+  color: #7a7a7a;
 }
+
 .sub-header ul.info li i {
   font-size: 20px;
   color: #f35525;
@@ -1049,7 +1051,7 @@ Video Style
 */
 
 .video {
-  
+
   padding: 100px 0px 250px 0px;
   position: relative;
 }
@@ -1096,7 +1098,7 @@ Fun Facts Style
 */
 
 .fun-facts {
-  padding: 100px 0px ;
+  padding: 100px 0px;
   text-align: center;
   /*margin-top: 125px;*/
 }
@@ -1108,12 +1110,14 @@ Fun Facts Style
   width: 250px;
   padding: 20px 0px;
   display: inline-block;
-  
+
 }
-.fun-facts .text-title{
-  padding: 80px 0px;  
-  
+
+.fun-facts .text-title {
+  padding: 80px 0px;
+
 }
+
 .fun-facts .counter h2,
 .fun-facts .counter p {
   display: inline-flex;
@@ -1195,11 +1199,13 @@ Best Deal Style
 .best-deal .info-table {
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
+  padding: 35px 15px 45px;
 }
 
 .best-deal .info-table ul li {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #eee;
@@ -1216,9 +1222,9 @@ Best Deal Style
 }
 
 .best-deal .info-table ul li span {
-  font-size: 20px;
+  font-size: 15px;
   color: #1e1e1e;
-  font-weight: 700;
+  font-weight: 600;
   float: right;
   display: inline-block;
 }
@@ -1329,7 +1335,7 @@ Contact Style
 
 .contact-content {
   /* margin-top: -240px;*/
- /* position: relative;
+  /* position: relative;
   z-index: 1;*/
   background-color: #fafafa;
   padding-bottom: 80px;
@@ -1983,66 +1989,88 @@ body {
 .owl-theme .owl-controls .owl-page.active span {
   background: #f35525;
 }
-.services{
+
+.services {
   background-color: #fafafa;
-    padding: 100px 0px;
+  padding: 100px 0px;
 }
-.services-description{
+
+.services-description {
   padding-top: 20px;
   font-weight: bold;
 }
+
 .box {
-  position:  relative;
-  width:  100%;
-  padding-right:  15px;
-  padding-left:  15px;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
+
 .our-services {
-  margin-top:  75px;
-  padding-bottom:  30px;
-  padding:  0 40px;
-  min-height:  198px;
-  text-align:  center;
-  border-radius:  10px;
-  background-color:  #fff;
-  transition:  all .4s ease-in-out;
-  box-shadow:  0 0 25px 0 rgba(20, 27, 202, .17);
+  margin-top: 75px;
+  padding-bottom: 30px;
+  padding: 0 40px;
+  min-height: 198px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17);
 }
+
 .our-services .icon {
-  margin-bottom:  -21px;
-  transform:  translateY(-50%);
-  text-align:  center;
+  margin-bottom: -21px;
+  transform: translateY(-50%);
+  text-align: center;
 }
-.our-services:hover h4,  .our-services:hover p {
-  color:  #fff;
+
+.our-services:hover h4,
+.our-services:hover p {
+  color: #fff;
 }
+
 .our-services p {
   padding-top: 18px;
   padding-bottom: 10px;
   font-size: 24px;
   color: #f35525;
 }
+
 .our-services h4 {
   padding-top: 8px;
-  
+
 }
+
 .speedup:hover {
-  box-shadow:  0 0 25px 0 rgba(20, 27, 201, .05);
-  cursor:  pointer;
-  background-image:  linear-gradient(-45deg,  #fb0054 0%,  #f55b2a 100%);
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%);
 }
+
 .settings:hover {
-  box-shadow:  0 0 25px 0 rgba(20, 27, 201, .05);
-  cursor:  pointer;
-  background-image:  linear-gradient(-45deg,  #34b5bf 0%,  #210c59 100%);
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
 }
+
 .privacy:hover {
-  box-shadow:  0 0 25px 0 rgba(20, 27, 201, .05);
-  cursor:  pointer;
-  background-image:  linear-gradient(-45deg,  #3615e7 0%,  #44a2f6 100%);
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%);
 }
+
 .backups:hover {
-  box-shadow:  0 0 25px 0 rgba(20, 27, 201, .05);
-  cursor:  pointer;
-  background-image:  linear-gradient(-45deg,  #fc6a0e 0%,  #fdb642 100%);
+  box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+  cursor: pointer;
+  background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%);
+}
+
+#owl-demo .item img,
+#owl-demo1 .item img,
+#owl-demo2 .item img,
+  {
+  display: block;
+  width: 100%;
+  height: auto;
 }
