@@ -20,13 +20,15 @@ Table of contents
 logo color :#c8a316
 prev color:#c8a316 
 title : from cda915  to #cda915
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
 --------------------------------------------- */
 /* 
 ---------------------------------------------
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@100;200;300;400;500;600;700;800;900");
 
 /* 
 ---------------------------------------------
@@ -141,7 +143,7 @@ hgroup {
 
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cairo', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -185,7 +187,7 @@ Global Styles
 */
 html,
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 ::selection {
