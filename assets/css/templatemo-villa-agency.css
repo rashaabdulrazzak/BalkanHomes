@@ -1853,3 +1853,17 @@ body {
   width: 100%;
   height: auto;
 }
+
+.iti {
+  width: 100%;
+  /* Ensures the input takes the full width */
+}
+
+.iti__flag-container {
+  margin-left: 8px;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+  background-color: rgb(246 246 246) !important;
+  border-radius: 22px !important;
+}

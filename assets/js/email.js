@@ -3,16 +3,24 @@ function emailSend() {
   var email = document.getElementById("emailModal").value;
   var message = document.getElementById("messageModal").value;
   var subject = document.getElementById("subjectModal").value;
-
+  var mobile = document.querySelector("#mobile").value;
+  console.log("message", subject);
+  if (!iti.isValidNumber()) {
+    swal("عذراً", "يرجى كتابة رقم هاتف صحيح", "error");
+    return; // Stop execution if mobile number is invalid
+  }
   var messageBody =
     "Name " +
     userName +
     "<br/> Email " +
     email +
+    "<br/> Mobile " +
+    mobile +
     "<br/> property type " +
     subject +
     "<br/> Message" +
     message;
+  console.log("message", messageBody);
   Email.send({
     Host: "smtp.elasticemail.com",
     Username: "rasha.abdulrazzak@gmail.com",
