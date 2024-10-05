@@ -1867,3 +1867,18 @@ body {
   background-color: rgb(246 246 246) !important;
   border-radius: 22px !important;
 }
+
+.sticky-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #c8a316;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
