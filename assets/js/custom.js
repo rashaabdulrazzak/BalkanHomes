@@ -144,4 +144,10 @@ $(document).ready(function () {
     itemsTablet: false,
     itemsMobile: false,
   });
+  $("#exampleModal").on("hide", function () {
+    $(window).trigger("resize");
+  });
+  $("#exampleModal").on("show", function () {
+    $(window).trigger("resize");
+  });
 });
