@@ -1,8 +1,8 @@
 function emailSend() {
-  var userName = document.getElementById("nameModal").value;
-  var email = document.getElementById("emailModal").value;
-  var message = document.getElementById("messageModal").value;
-  var subject = document.getElementById("subjectModal").value;
+  var userName = document.querySelector("#name").value;
+  var email = document.querySelector("#email").value;
+  var message = document.querySelector("#message").value;
+  var subject = document.querySelector("#subject").value;
   var mobile = document.querySelector("#mobile").value;
   console.log("message", subject);
   if (!iti.isValidNumber()) {

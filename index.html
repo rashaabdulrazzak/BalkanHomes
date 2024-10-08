@@ -229,18 +229,51 @@
           <div class="header-text">
             <span class="category">باشاك شهير, <em>استنبول</em></span>
             <h2>سارع!<br />تملك فيلتك في جوهرة اسطنبول</h2>
+            <div class="cta-div">
+              <a
+                class="button cta-button"
+                type="button"
+                href="#exampleModal"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                استشر فريقنا
+              </a>
+            </div>
           </div>
         </div>
         <div class="item item-2" dir="rtl">
           <div class="header-text">
             <span class="category">الباسن اكسبريس, <em>استنبول</em></span>
             <h2>سارع <br />واحصل على أفضل على عرض استثماري</h2>
+            <div class="cta-div">
+              <a
+                class="button cta-button"
+                type="button"
+                href="#exampleModal"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                استشر فريقنا
+              </a>
+            </div>
           </div>
         </div>
         <div class="item item-3" dir="rtl">
           <div class="header-text">
             <span class="category">بيلك دوزو, <em>استنبول</em></span>
             <h2>بالأقساط <br />احصل على الجنسية التركية</h2>
+            <div class="cta-div">
+              <a
+                class="button cta-button"
+                type="button"
+                href="#exampleModal"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                استشر فريقنا
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -430,7 +463,7 @@
                             href="#exampleModal"
                             data-bs-toggle="modal"
                             data-bs-target="#exampleModal"
-                            ><i class="fa fa-calendar"></i> احجز موعدك</a
+                            ><i class="fa fa-calendar"></i> احصل على التفاصيل</a
                           >
                         </div>
                       </div>
@@ -540,7 +573,7 @@
                             </li>
                             <li>محلات تجارية <span>55</span></li>
                             <li>
-                              خدمات
+                              خدمات إضافية
                               <span
                                 >ساونا، حمام تركي، قاعات رياضية، مسابح
                                 داخلية</span
@@ -819,7 +852,7 @@
                     <input
                       type="tel"
                       name="mobile"
-                      id="mobile"
+                      id="mobileSection"
                       autocomplete="on"
                       required
                     />
@@ -1025,8 +1058,24 @@
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script>
-      const input = document.querySelector("#mobile");
+      const inputSection = document.querySelector("#mobileSection");
+      const input = document.querySelector("#mobileModal");
       const iti = window.intlTelInput(input, {
+        initialCountry: "auto", // يحدد الدولة تلقائيًا بناءً على موقع المستخدم
+        geoIpLookup: function (callback) {
+          fetch("https://ipinfo.io?token=058018325223ae") // يمكنك الحصول على توكن مجاني من ipinfo.io
+            .then((resp) => resp.json())
+            .then((resp) => {
+              const countryCode = resp && resp.country ? resp.country : "us";
+              callback(countryCode);
+            });
+        },
+        separateDialCode: true, // Shows the country code separately
+        autoHideDialCode: false, // Always show the country code even if the input is empty
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Utility script for validation
+      });
+      const itiSection = window.intlTelInput(inputSection, {
         initialCountry: "auto", // يحدد الدولة تلقائيًا بناءً على موقع المستخدم
         geoIpLookup: function (callback) {
           fetch("https://ipinfo.io?token=058018325223ae") // يمكنك الحصول على توكن مجاني من ipinfo.io
