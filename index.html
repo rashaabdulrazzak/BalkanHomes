@@ -226,7 +226,7 @@
     <div class="main-banner" dir="ltr">
       <div class="owl-carousel owl-banner">
         <div class="item item-1" dir="rtl">
-          <div class="header-text">
+          <div class="container header-text">
             <span class="category">باشاك شهير, <em>استنبول</em></span>
             <h2>سارع!<br />تملك فيلتك في جوهرة اسطنبول</h2>
             <div class="cta-div">
@@ -243,24 +243,18 @@
           </div>
         </div>
         <div class="item item-2" dir="rtl">
-          <div class="header-text">
+          <div class="container header-text">
             <span class="category">الباسن اكسبريس, <em>استنبول</em></span>
             <h2>سارع <br />واحصل على أفضل على عرض استثماري</h2>
             <div class="cta-div">
-              <a
-                class="button cta-button"
-                type="button"
-                href="#exampleModal"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
+              <a class="button cta-button" type="button" href="#exampleModal">
                 استشر فريقنا
               </a>
             </div>
           </div>
         </div>
         <div class="item item-3" dir="rtl">
-          <div class="header-text">
+          <div class="container header-text">
             <span class="category">بيلك دوزو, <em>استنبول</em></span>
             <h2>بالأقساط <br />احصل على الجنسية التركية</h2>
             <div class="cta-div">
@@ -817,7 +811,7 @@
         </div>
       </div>
     </div>
-    <div class="contact-content" dir="ltr">
+    <div class="contact-content section" dir="ltr" id="test">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 offset-lg-4">
@@ -935,6 +929,7 @@
             <!-- Form inside the modal -->
             <form
               id="contact-form"
+              class="form-element"
               onsubmit="emailSend(); reset(); return false;"
             >
               <div class="row" dir="rtl">
