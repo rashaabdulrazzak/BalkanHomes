@@ -203,6 +203,19 @@
                 <li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
                 <li><a href="#properties">مشاريعنا</a></li>
                 <li><a href="#contact">اتصل بنا</a></li>
+                <li class="d-md-none mobile-social">
+                  <ul class="social-links">
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=61551488356070&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://youtube.com/@balkanhomes?si=pDCpEXksJArEzoRf" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/balkanhomes.ar?igsh=MWFzOW1kY2czdzVveg=="><i class="fab fa-instagram"></i></a>
+                    </li>
+                  </ul>
+                </li>
                 <li dir="ltr">
                   <a
                     href="#exampleModal"
@@ -211,6 +224,7 @@
                     ><i class="fa fa-calendar"></i> احجز زيارتك</a
                   >
                 </li>
+                
               </ul>
               <a class="menu-trigger">
                 <span>Menu</span>
@@ -224,11 +238,108 @@
     <!-- ***** Header Area End ***** -->
 
     <div class="main-banner" dir="ltr">
-      <div class="owl-carousel owl-banner">
+      <section class="banner-section">
+        <div class="banner-overlay">
+          <div class="container h-100">
+            <div class="row banner-content">
+              <!-- Left Side - Form -->
+              <div class="col-md-6">
+                <div class="form-wrapper contact-content" >
+                  <form
+                    id="contact-form"
+                    class="form-element"
+                    onsubmit="emailSend(); reset(); return false;"
+                  >
+                    <div class="row" dir="rtl">
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <label for="name">الاسم</label>
+                          <input
+                            type="name"
+                            name="name"
+                            id="nameBanner"
+                            placeholder="يرجى كتابة الاسم"
+                            autocomplete="on"
+                            required
+                          />
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12" dir="rtl">
+                        <fieldset>
+                          <label for="mobile">رقم الهاتف</label>
+                          <input
+                            type="tel"
+                            name="mobile"
+                            id="telBanner"
+                            autocomplete="on"
+                            required
+                          />
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <label for="email">الإيميل</label>
+                          <input
+                            type="text"
+                            name="email"
+                            id="emailBanner"
+                            pattern="[^ @]*@[^ @]*"
+                            placeholder="يرجى كتابة الإيميل"
+                            required=""
+                          />
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <label for="subject">نوع العقار</label>
+                          <input
+                            type="subject"
+                            name="subject"
+                            id="subjectBanner"
+                            placeholder="نوع العقار"
+                            autocomplete="on"
+                            required=""
+                          />
+                        </fieldset>
+                      </div>
+
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <button
+                            type="submit"
+                            id="form-submit"
+                            class="orange-button"
+                          >
+                            إرسال
+                          </button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- Right Side - Heading -->
+              <div
+                class="col-md-6 d-flex align-items-center justify-content-center"
+              >
+                <div class="text-section" dir="rtl">
+                  <div class="container header-text-new">
+                    <h2>
+                      سارع <br />
+                      واحصل على أفضل على عرض استثماري في تركيا
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--div class="owl-carousel owl-banner">
         <div class="item item-1" dir="rtl">
           <div class="container header-text">
             <span class="category">باشاك شهير, <em>استنبول</em></span>
-            <h2>سارع!<br />تملك فيلتك في جوهرة اسطنبول</h2>
+            <h2>سارع!<br />تملك فيلتك في جوهرة اسطنبول</h2> 
             <div class="cta-div">
               <a
                 class="button cta-button"
@@ -270,7 +381,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div-->
     </div>
     <div class="section services">
       <div class="text-center">
@@ -790,7 +901,8 @@
         </div>
       </div>
     </div>
-    <div class="contact section" id="contact" dir="ltr">
+
+    <!--div class="contact section" id="contact" dir="ltr">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
@@ -810,13 +922,18 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="contact-content section" dir="ltr" id="test">
+    </div-->
+    <div class="contact-content contact-section section" dir="ltr" id="test">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 offset-lg-4">
+          <div class="col-lg-12 ">
             <div class="section-heading text-center">
-              <h2>تواصل معنا</h2>
+             
+              <h6>|تواصل معنا للحصول على أفضل العروض في تركيا</h6>
+              <p class="services-description">
+                احصل على استشارة مجانية اليوم وتعرف على أفضل فرص الاستثمار
+                العقاري وخطط التقسيط
+              </pح>
             </div>
           </div>
         </div>
@@ -1055,7 +1172,23 @@
     <script>
       const inputSection = document.querySelector("#mobileSection");
       const input = document.querySelector("#mobileModal");
+      const inputBanner = document.querySelector("#telBanner");
       const iti = window.intlTelInput(input, {
+        initialCountry: "auto", // يحدد الدولة تلقائيًا بناءً على موقع المستخدم
+        geoIpLookup: function (callback) {
+          fetch("https://ipinfo.io?token=058018325223ae") // يمكنك الحصول على توكن مجاني من ipinfo.io
+            .then((resp) => resp.json())
+            .then((resp) => {
+              const countryCode = resp && resp.country ? resp.country : "us";
+              callback(countryCode);
+            });
+        },
+        separateDialCode: true, // Shows the country code separately
+        autoHideDialCode: false, // Always show the country code even if the input is empty
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Utility script for validation
+      });
+      const itiBanner = window.intlTelInput(inputBanner, {
         initialCountry: "auto", // يحدد الدولة تلقائيًا بناءً على موقع المستخدم
         geoIpLookup: function (callback) {
           fetch("https://ipinfo.io?token=058018325223ae") // يمكنك الحصول على توكن مجاني من ipinfo.io
