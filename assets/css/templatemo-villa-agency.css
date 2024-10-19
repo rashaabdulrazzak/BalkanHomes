@@ -444,7 +444,7 @@ Header Style
   letter-spacing: .25px;
 }
 
-.header-area .main-nav .nav li:last-child a, .header-area .main-nav ul.social-links li a i {
+.header-area .main-nav .nav li:last-child a {
   background-color: #1e1e1e;
   color: #fff;
   font-size: 14px;
@@ -454,7 +454,7 @@ Header Style
   padding-left: 0px;
 }
 
-.header-area .main-nav .nav li:last-child a i , .header-area .main-nav ul.social-links li a i{
+.header-area .main-nav .nav li:last-child a i {
   background-color: #c8a316;
   display: inline-block;
   width: 40px;
@@ -466,7 +466,7 @@ Header Style
   margin-left: -1px;
 }
 
-.header-area .main-nav .nav li:last-child:hover a, .header-area .main-nav .social-links li:hover a  {
+.header-area .main-nav .nav li:last-child:hover a {
   background-color: #1e1e1e;
 }
 
@@ -1766,15 +1766,17 @@ body {
 }
 
 .banner-content h2 {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 50px;
   width: 100%;
   margin-bottom: 0px;
   color: #fff;
 }
-
+.mobile-text{
+  display: none;
+}
 .contact-section {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -1783,6 +1785,13 @@ body {
 @media (max-width: 480px) {
   .text-section {
     display: none;
+  }
+  .mobile-text{
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin-top:15px;
+
   }
   .header-area .main-nav .social-links li a i{
     margin-right: 0px !important;
