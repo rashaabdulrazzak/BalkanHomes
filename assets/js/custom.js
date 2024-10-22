@@ -189,18 +189,18 @@ $(document).ready(function () {
     $("#myInput").trigger("focus");
     $(window).trigger("resize");
   });*/
-  /*$("#exampleModalCenter").on("shown.bs.modal", function () {
+  $("#exampleModalCenter").on("shown.bs.modal", function () {
     $(window).trigger("resize");
   });
 
-  $("#exampleModalCenter").on("hidden.bs.modal", function () {
-    $(window).trigger("resize");
-  });*/
   /* $("#exampleModalCenter").on("hidden.bs.modal", function () {
     $(window).trigger("resize");
-    document.body.style.height = "100vh";
-    document.querySelector(".modal").style.display = "block";
   });*/
+  $("#exampleModalCenter").on("hidden.bs.modal", function () {
+    $(window).trigger("resize");
+    /*document.body.style.height = "100vh";
+    document.querySelector(".modal").style.display = "block";*/
+  });
   /*$(".sticky-button").on("click", function () {
     // Scroll to the top of the page when the modal is opened
     window.scrollTo({ top: 0, behavior: "smooth" });

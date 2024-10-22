@@ -1777,5 +1777,13 @@ body {
     left: 30px;
   }
 
+  .modal-header {
+    justify-content: space-around;
+  }
+
+  .modal-dialog {
+    width: 90%;
+    top: 30px;
+  }
 
 }
