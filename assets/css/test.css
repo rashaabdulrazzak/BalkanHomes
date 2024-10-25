@@ -1,0 +1,284 @@
+.btn.register {
+  margin-inline-start: 12px !important;
+  margin-inline-end: 0px !important;
+}
+
+.btn.sign-in {
+  height: 28px !important;
+  width: auto !important;
+  max-width: 84px !important;
+  padding: 0 8px !important;
+}
+
+.m-nav-info-w-container-bc .m-nav-icon-bc.bc-i-circle-dollar,
+.user-nav-icon.bc-i-circle-dollar {
+  background: #195044 !important;
+}
+
+.m-nav-icon-bc.bc-i-paper-dollar {
+  background: rgb(0 205 0) !important;
+}
+
+.m-nav-icon-bc.bc-i-promotions,
+.user-nav-icon.bc-i-promotions {
+  background: yellow !important;
+}
+
+.btn.register {
+  margin-inline-start: 12px !important;
+  margin-inline-end: 0px !important;
+}
+
+.btn.sign-in {
+  height: 28px !important;
+  width: auto !important;
+  max-width: 84px !important;
+  padding: 0 8px !important;
+}
+
+.m-nav-info-w-container-bc .m-nav-icon-bc.bc-i-circle-dollar,
+.user-nav-icon.bc-i-circle-dollar {
+  background: #195044 !important;
+}
+
+.m-nav-icon-bc.bc-i-paper-dollar {
+  background: rgb(0 205 0) !important;
+}
+
+.m-nav-icon-bc.bc-i-promotions,
+.user-nav-icon.bc-i-promotions {
+  background: yellow !important;
+}
+
+.m-nav-icon-bc.bc-i-prematch-v1 {
+
+  background: red !important;
+}
+
+.m-nav-icon-bc.bc-i-bonus {
+  background: #a13d6a !important;
+}
+
+.hdr-navigation-link-bc .nav-menu-title {
+  font-weight: bolder !important;
+}
+
+.btn.sign-in,
+.btn.register {
+  font-weight: bolder !important;
+}
+
+.footerWarningAge {
+  border-color: rgba(var(--b-sc), .5) !important;
+  color: rgba(var(--b-sc), .5) !important;
+}
+
+.horizontalSliderWrapper {
+  margin: 0 auto !important;
+  max-width: 45rem !important;
+}
+
+.horizontalSliderRow .footerSliderImage img {
+  width: 3.125rem !important;
+  height: 3.125rem !important;
+  filter: inherit !important;
+  opacity: 1 !important;
+
+}
+
+.footerSliderImage:hover img {
+  filter: grayscale(100%) !important;
+  opacity: .6 !important;
+  transition: opacity .24s !important;
+}
+
+.horizontalSliderRow {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  grid-template-rows: 1fr auto !important;
+  gap: 10px !important;
+  margin-top: 20px !important;
+}
+
+.horizontalSliderRow .footerSliderImage:nth-child(6) {
+  grid-column: 2 / span 3 !important;
+  grid-row: 2 !important;
+  justify-self: center !important;
+  background: transparent !important;
+  margin-top: 2rem !important;
+}
+
+.horizontalSliderRow .footerSliderImage:nth-child(6)>img {
+  width: 120px !important;
+  height: 120px !important;
+  display: none !important;
+}
+
+.horizontalSliderRow .footerSliderImage>img {
+  background: transparent !important;
+}
+
+.horizontalSliderRow .footerSliderImage {
+  background: transparent !important;
+}
+
+.horizontalSliderRow a.footerSliderImage:nth-child(6) {
+  width: 120px !important;
+  height: 120px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-image: url('https://cmsbetconstruct.com/storage/medias/focusbet-18761297/media_18761297_6d0155d717caa8ec807260d9c5970f25.png') !important;
+
+}
+
+.horizontalSliderRow a.footerSliderImage:nth-child(6):hover {
+  filter: grayscale(100%) !important;
+  opacity: .6 !important;
+  transition: opacity .24s !important;
+}
+
+.footerSliderSingleEl .footerSliderImage img {
+  height: 53px !important;
+  width: auto !important;
+}
+
+.footerSliderSingleElWrapper:not(:last-child) {
+  margin-bottom: 24px !important;
+}
+
+.footerSliderSingleEl .footerSliderImage {
+  margin-left: 4px !important;
+  margin-right: 30px !important;
+}
+
+.user-nav-icon.bc-i-paper-dollar {
+  background: rgb(0 205 0) !important;
+}
+
+.bc-i-bonus {
+  background: rgba(var(--oc-1), 1) !important;
+}
+
+.m-nav-icon-bc.bc-i-prematch-v1 {
+
+  background: red !important;
+}
+
+.hdr-navigation-link-bc .nav-menu-title {
+  font-weight: bolder !important;
+}
+
+.btn.sign-in,
+.btn.register {
+  font-weight: bolder !important;
+}
+
+.footerWarningAge {
+  border-color: rgba(var(--b-sc), .5) !important;
+  color: rgba(var(--b-sc), .5) !important;
+}
+
+.horizontalSliderWrapper {
+  margin: 0 auto !important;
+  max-width: 45rem !important;
+}
+
+.horizontalSliderRow .footerSliderImage img {
+  width: 3.125rem !important;
+  height: 3.125rem !important;
+  filter: inherit !important;
+  opacity: 1 !important;
+
+}
+
+.footerSliderImage:hover img {
+  filter: grayscale(100%) !important;
+  opacity: .6 !important;
+  transition: opacity .24s !important;
+}
+
+.horizontalSliderRow {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  grid-template-rows: 1fr auto !important;
+  gap: 10px !important;
+  margin-top: 20px !important;
+}
+
+.horizontalSliderRow .footerSliderImage:nth-child(6) {
+  grid-column: 2 / span 3 !important;
+  grid-row: 2 !important;
+  justify-self: center !important;
+  background: transparent !important;
+  margin-top: 2rem !important;
+}
+
+.horizontalSliderRow .footerSliderImage:nth-child(6)>img {
+  width: 120px !important;
+  height: 120px !important;
+  display: none !important;
+}
+
+.horizontalSliderRow .footerSliderImage>img {
+  background: transparent !important;
+}
+
+.horizontalSliderRow .footerSliderImage {
+  background: transparent !important;
+}
+
+.horizontalSliderRow a.footerSliderImage:nth-child(6) {
+  width: 120px !important;
+  height: 120px !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-image: url('https://cmsbetconstruct.com/storage/medias/focusbet-18761297/media_18761297_6d0155d717caa8ec807260d9c5970f25.png') !important;
+
+}
+
+.horizontalSliderRow a.footerSliderImage:nth-child(6):hover {
+  filter: grayscale(100%) !important;
+  opacity: .6 !important;
+  transition: opacity .24s !important;
+}
+
+.footerSliderSingleEl .footerSliderImage img {
+  height: 53px !important;
+  width: auto !important;
+}
+
+.footerSliderSingleElWrapper:not(:last-child) {
+  margin-bottom: 24px !important;
+}
+
+.footerSliderSingleEl .footerSliderImage {
+  margin-left: 4px !important;
+  margin-right: 30px !important;
+}
+
+.user-nav-icon.bc-i-paper-dollar,
+.user-nav-icon.bc-i-money-dollar {
+  background: rgb(0 205 0) !important;
+  color: black !important;
+}
+
+.bc-i-bonus,
+.user-nav-icon.bc-i-bonus-request {
+  background: rgba(var(--hero), 1) !important;
+  color: black !important
+}
+
+.m-nav-icon-bc.bc-i-bonus,
+.m-nav-icon-bc.bc-i-promotions-3 {
+  background: rgba(var(--hero), 1) !important;
+}
+
+.m-nav-icon-bc.bc-i-live {
+  background: red !important;
+}
+
+.m-nav-icon-bc.bc-i-jackpot {
+  background: #6585a1 !important;
+}
