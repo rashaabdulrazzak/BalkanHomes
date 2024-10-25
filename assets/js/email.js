@@ -1,4 +1,7 @@
 function emailSend() {
+  
+  const serviceID = 'service_vjgmbds';
+  const templateID = 'template_r4v7ufb';
   var userName = document.querySelector("#name").value;
   var email = document.querySelector("#email").value;
   var message = document.querySelector("#message").value;
@@ -21,23 +24,22 @@ function emailSend() {
     "<br/> Message" +
     message;
   console.log("message", messageBody);
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "rasha.abdulrazzak@gmail.com",
-    Password: "C87DC74F7C65239B4308F964C0C91FEBD4D4",
-    To: "rasha.abdulrazzak@gmail.com",
-    From: "rasha.abdulrazzak@gmail.com",
-    Subject: "تم إرسال رسالة جديدة",
-    Body: messageBody,
-  }).then((message) => {
-    if (message == "OK") {
-      swal("تهانينا", "تم إرسال رسالتك بنجاح!", "success");
-    } else {
-      swal(
-        "عذراً",
-        "حدث خطأ بارسال الرسالة الرجاء المحاولة مرة ثانية",
-        "error"
-      );
-    }
+  var templateParams = {
+    name: 'James',
+    notes: 'Check this out!',
+  };
+  emailjs.sendForm(serviceID, templateID, templateParams)
+  .then(() => {
+    swal("تهانينا", "تم إرسال رسالتك بنجاح!", "success");
+     window.location.href = "/thanks.html";
+  }, (err) => {
+    swal(
+      "عذراً",
+      "حدث خطأ بارسال الرسالة الرجاء المحاولة مرة ثانية",
+      "error"
+    );
   });
+ 
+  
+  return true;
 }
