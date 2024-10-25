@@ -271,7 +271,7 @@
                   <form
                     id="contact-form"
                     class="form-element"
-                    onsubmit="emailSend(); reset(); return false;"
+                    onsubmit="emailSendBanner(); reset(); return false;"
                   >
                     <div class="row" dir="rtl">
                       <div class="col-lg-12">
@@ -289,10 +289,10 @@
                       </div>
                       <div class="col-lg-12" dir="rtl">
                         <fieldset>
-                          <label for="mobile">رقم الهاتف</label>
+                          <label for="tel">رقم الهاتف</label>
                           <input
                             type="tel"
-                            name="mobile"
+                            name="tel"
                             id="telBanner"
                             autocomplete="on"
                             required
@@ -303,7 +303,7 @@
                         <fieldset>
                           <label for="email">الإيميل</label>
                           <input
-                            type="text"
+                            type="email"
                             name="email"
                             id="emailBanner"
                             pattern="[^ @]*@[^ @]*"
@@ -913,27 +913,7 @@
       </div>
     </div>
 
-    <!--div class="contact section" id="contact" dir="ltr">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="section-heading text-center">
-              <h6>|تواصل معنا للحصول على أفضل العروض في تركيا</h6>
-              <h2>
-                احصل على استشارة مجانية اليوم وتعرف على أفضل فرص الاستثمار
-                العقاري وخطط التقسيط
-              </h2>
-              <div class="icon-button">
-                <a
-                  href="https://wa.me/+905439073532?text=I'm%20inquiring%20about%20the%20apartment%20listing"
-                  ><i class="fa fa-whatsapp"></i> اتصل بنا الآن</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div-->
+  
     <div class="contact-content contact-section section" dir="ltr" id="test">
       <div class="container">
         <div class="row">
@@ -952,7 +932,7 @@
           <div class="col-lg-6 offset-lg-3">
             <form
               id="contact-form"
-              onsubmit="emailSend(); reset(); return false;"
+              onsubmit="emailSendSection(); reset(); return false;"
             >
               <div class="row" dir="rtl">
                 <div class="col-lg-12">
@@ -970,10 +950,10 @@
                 </div>
                 <div class="col-lg-12" dir="rtl">
                   <fieldset>
-                    <label for="mobile">رقم الهاتف</label>
+                    <label for="tel">رقم الهاتف</label>
                     <input
                       type="tel"
-                      name="mobile"
+                      name="tel"
                       id="mobileSection"
                       autocomplete="on"
                       required
@@ -984,7 +964,7 @@
                   <fieldset>
                     <label for="email">الإيميل</label>
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       id="email"
                       pattern="[^ @]*@[^ @]*"
@@ -1063,6 +1043,8 @@
               id="contact-form"
               class="form-element"             
               method="POST"
+              
+             
               onsubmit="emailSend(); reset(); return false;"
             >
               <div class="row" dir="rtl">
@@ -1138,7 +1120,7 @@
                   </fieldset>
                 </div>
               </div>
-              <input type="hidden" name="_redirect" value="http://127.0.0.1:5500/thanks.html" />
+              <input type="hidden" name="_redirect" value="/thanks.html" >
 
             </form>
             <div id="status"></div>
@@ -1237,32 +1219,11 @@
         utilsScript:
           "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Utility script for validation
       });
+      
     </script>
-    <!--script>
-      const form = document.querySelector('form');
-      form.addEventListener('submit', e => {
-          e.preventDefault();
-          const formData = new FormData(form);
-          const xhr = new XMLHttpRequest();
-          xhr.open('POST', "https://formspree.io/f/xovqvkav", true);
-          xhr.setRequestHeader('Accept', 'application/json');
-          xhr.onreadystatechange = () => {
-              if (xhr.readyState !== XMLHttpRequest.DONE) return;
-              if (xhr.status === 200) {
-                window.location.href = "http://127.0.0.1:5500/thanks.html"
-                 // form.reset();
-                 // alert('Thank you for your message. We will get back to you soon.');
-              } else {
-                  alert('Sorry, there was an error. Please try again later.');
-              }
-          };
-          xhr.send(formData);
-          
-      });
-  </script-->
- 
 
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/email.js"></script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.12.0.min.js"
@@ -1278,16 +1239,8 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "RGaFzzPZNneOxhqqe",
-      });
-   })();
-</script>
-<script src="assets/js/email.js"></script>
+
+
   </body>
 
 </html>

@@ -201,6 +201,7 @@ $(document).ready(function () {
     /*document.body.style.height = "100vh";
     document.querySelector(".modal").style.display = "block";*/
   });
+  
   /*$(".sticky-button").on("click", function () {
     // Scroll to the top of the page when the modal is opened
     window.scrollTo({ top: 0, behavior: "smooth" });

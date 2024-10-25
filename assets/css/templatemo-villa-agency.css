@@ -311,7 +311,7 @@ Header Style
   margin-left: 8px;
 }
 
-.sub-header ul.social-links li a,
+.sub-header ul.social-links li a
   {
   display: inline-block;
   width: 30px;
@@ -1618,7 +1618,7 @@ body {
 
 #owl-demo .item img,
 #owl-demo1 .item img,
-#owl-demo2 .item img,
+#owl-demo2 .item img
   {
   display: block;
   width: 100%;
