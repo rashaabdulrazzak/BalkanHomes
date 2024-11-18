@@ -735,9 +735,8 @@ Fun Facts Style
 */
 
 .fun-facts {
-  padding: 100px 0px;
+  padding: 0px 0px 100px;
   text-align: center;
-  /*margin-top: 125px;*/
 }
 
 .fun-facts .counter {
