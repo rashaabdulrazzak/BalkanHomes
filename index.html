@@ -148,8 +148,8 @@
             <ul class="info">
               <li><i class="fa fa-envelope"></i> info@company.com</li>
               <li>
-                <a href="tel:+905439073532"
-                  ><i class="fa fa-phone"></i> +90-543-907-3532</a
+                <a href="https://api.whatsapp.com/send?phone=+905439073532&text=ask20%about20%property"
+                  ><i class="fa fa-whatsapp"></i> +90-543-907-3532</a
                 >
               </li>
             </ul>
@@ -1096,7 +1096,7 @@
     >
       استشر فريقنا
     </a>
-
+    
     <footer dir="ltr">
       <div class="container">
         <div class="col-lg-8">
@@ -1188,7 +1188,37 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-
+<script>
+  var url = 'https://edna.io/wp-content/plugins/whatsapp-widget-generator/js/generator.js?48941';
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = url;
+  var options = {
+"host":"https://edna.io",
+"enabled":true,
+"chatButtonSetting":{
+    "backgroundColor":"#4fce5d",
+    "ctaText":"",
+    "icon":"whatsapp",
+    "position":"right",
+},
+"brandSetting":{
+    "backgroundColor":"#4fce5d",
+    "brandImg":"https://balkanhomes.net/assets/images/balkanhome-logo.png",
+    "brandName":"Balkan",
+    "brandSubTitle":"اون لاين",
+    "ctaText":"ابدأ محادثتك",
+    "phoneNumber":"905439073532",
+    "welcomeText":"مرحبا "
+}
+};
+  s.onload = function() {
+      CreateWhatsappChatWidget(options);
+  };
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+</script>
 
   </body>
 
