@@ -145,65 +145,13 @@ $(document).ready(function () {
     itemsMobile: false,
   });
 
-  /*$("#exampleModal").on("hidden.bs.modal", function () {
-    $(window).trigger("resize");
-  });*/
-  /* $("#exampleModal").on("show", function () {
-    //$(window).trigger("resize");
-    document.body.style.overflow = "hidden";
-    document.documentElement.style.overflow = "hidden";
-    document.documentElement.style.height = "100vh";
-    document.body.style.height = "100vh";
-    document.querySelector(".modal").style.display = "block";
-  });
-  $("#exampleModal").on("hidden.bs.modal", function () {
-    document.body.classList.remove("modal-open");
-    document.querySelector(".modal").style.display = "none";
-    $("body").css({
-      "padding-right": "0",
-      overflow: "auto",
-    });
-  });*/
-
-  /* $(".cta-button").on("click", function () {
-    $(window).trigger("resize");
-    document.documentElement.style.height = "100vh";
-    //document.body.style.height = "100vh";
-    //document.body.style.overflow = "hidden";
-    //document.documentElement.style.overflow = "hidden";
-
-    // document.querySelector(".modal").style.display = "block";
-
-    // Remove hidden attribute before setting display to block
-    // $(".modal").removeClass("hidden").css("display", "block");
-  });*/
-
-  /* $(".modal-close").on("click", function () {
-    document.body.style.overflow = "auto";
-    document.documentElement.style.overflow = "auto";
-    document.documentElement.style.height = "auto";
-    document.body.style.height = "auto";
-    document.querySelector(".modal").style.display = "none";
-  });*/
-  /*$("#exampleModal").on("shown.bs.modal", function () {
-    $("#myInput").trigger("focus");
-    $(window).trigger("resize");
-  });*/
   $("#exampleModalCenter").on("shown.bs.modal", function () {
     $(window).trigger("resize");
   });
-
-  /* $("#exampleModalCenter").on("hidden.bs.modal", function () {
-    $(window).trigger("resize");
-  });*/
+ 
   $("#exampleModalCenter").on("hidden.bs.modal", function () {
-    $(window).trigger("resize");
-    /*document.body.style.height = "100vh";
-    document.querySelector(".modal").style.display = "block";*/
+    $(window).trigger("resize");   
   });
   
-  /*$(".sticky-button").on("click", function () {
-    // Scroll to the top of the page when the modal is opened
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });*/
+
 });
